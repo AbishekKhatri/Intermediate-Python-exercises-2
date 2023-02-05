@@ -1,0 +1,30 @@
+# Import time
+import time
+# import random
+import random
+
+# Define the fibonacci function to calculate the nth number in the fibonacci sequence
+def fibonacci(n):
+    # Return 0 if n is less than or equal to 0
+    if n <= 0:
+        return 0
+    # Return 1 if n is equal to 1
+    elif n == 1:
+        return 1
+    # Return the sum of the (n-1)th and (n-2)th numbers in the fibonacci sequence
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+
+# Generate a random number between 15 and 35
+n = 15 + (35 - 15) * random.random()
+# Record the start time
+start_time = time.time()
+# Calculate the fibonacci number at the nth position
+result = fibonacci(int(n))
+# Print the result
+print("fib:", result)
+# Print the time taken to calculate the result
+print("Time taken:", time.time() - start_time, "seconds")
+
+
+
