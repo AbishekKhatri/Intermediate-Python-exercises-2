@@ -1,0 +1,18 @@
+import numpy as np
+
+# Create a numpy list of 10 random floats, each 0 to 1
+np_list = np.random.rand(10)
+
+# Calculate mean
+mean = np.mean(np_list)
+
+# Calculate median
+median = np.median(np_list)
+
+# Calculate standard deviation
+std_dev = np.std(np_list)
+
+# Print results
+print("Mean:", mean)
+print("Median:", median)
+print("Standard Deviation:", std_dev)
